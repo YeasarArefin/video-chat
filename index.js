@@ -10,8 +10,7 @@ app.use(cors());
 
 const io = new Server(server, {
     cors: {
-        // origin: 'https://money-chat.netlify.app',
-        origin: 'http://localhost:3000',
+        origin: '*',
         methods: ['GET', 'POST']
     }
 });
